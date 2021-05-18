@@ -20,6 +20,8 @@ import tensorflow as tf
 tf.set_random_seed(228)
 from model import Artgan
 
+#CUDA_VISIBLE_DEVICES=0 --model_name=model_monet --phase=inference --image_size=1024 --ii_dir "G:/My Drive/CONFERENCES/WSCG 2021/Experiments/FINAL PUSH/test images/" --save_dir=./results/
+
 def parse_list(str_value):
     if ',' in str_value:
         str_value = str_value.split(',')
